@@ -1,3 +1,4 @@
+# 线性的逻辑回归
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -41,8 +42,6 @@ class network():
 
 net = network(0, 2)
 (x_axis, y_axis) = net.train(train_x, train_y, 100000, 0.001)
-# net.theta = np.array([[0.13459511], [0.1130103]])
-# net.b = -15.634926172822375
 print("net.theta = {}, net.b = {}".format(net.theta, net.b))
 plt.plot(x_axis, y_axis)
 plt.show()
